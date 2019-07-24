@@ -66,14 +66,29 @@ h1, h2, h3, h4, h5 {
 /* First page here */
 
 body {
- width: 895px;
+ max-width: 895px;
  margin: auto;}
+
+ .TabMobLogo{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+ }
+
+ @media (max-width: 800px) {
+    .TabMobLogo {display: block;}
+    }
 
 nav{
  display: flex;
  justify-content: space-between;
  align-items: center;
- margin: 35px 0px 0px 0px;
+ margin: 40px 0px 0px 0px;
+}
+
+@media (max-width:800px) {
+    nav {justify-content: space-around;}
 }
 
 nav a {
@@ -84,43 +99,81 @@ nav a {
 }
 
 .logo {
- padding-left: 30px;
+ padding-left: 0px;
  padding-right: 10px;
+}
+
+@media (max-width: 800px){
+    .logo {display: none;}
 }
 
 .headerPage1 {
  display: flex;
  justify-content: space-between;
  align-items: center;
- margin-top: 60px;
+ margin-top: 70px;
+}
+
+@media (max-width:800px){
+    .headerPage1 {justify-content: center;}
 }
 
 .title{
  text-align: center;
- padding-left: 70px;
+ padding-left: 135px;
+ padding-top: 20px;
+}
+
+@media (max-width: 800px){
+    .title {padding-left: 0px;}
 }
 
 .title h1{
- font-size:75px;
+ font-size:70px;
+ line-height: 60px;
  }
 
 .title a{
  text-decoration: none;
  font-size:15px;
  color: Gray;
- padding: 6px 20px;
+ padding: 5px 45px;
  border: 1px solid black;
+ line-height: 60px;
+}
+
+.image1 {
+    padding-right: 10px;
+}
+
+@media (max-width: 800px){
+    .image1 {display: none;}
 }
 
 .above {
  display: flex;
  border-top: 1px solid black;
  padding-top: 40px;
- margin-top: 120px;
+ margin-top: 75px;
+}
+
+@media (max-width:800px){
+    .above {margin-left: 20px;
+            margin-right: 20px;}
+}
+
+@media (max-width:800px){
+    .words {padding-right: 20px;}
 }
 
 .middle-img{
  margin:30px 5px 30px 5px;
+}
+
+@media (max-width:800px){
+    .middle-img{width: 100%;
+                height: auto;
+                margin: 30px 15px}
 }
 
 .below {
@@ -128,6 +181,11 @@ nav a {
  justify-content: space-between;
  border-bottom: 1px solid black;
  padding-bottom: 50px;
+}
+
+@media (max-width:800px){
+    .below {margin-left: 20px;
+        margin-right: 20px;}
 }
 
 .bottom1{
@@ -142,6 +200,10 @@ nav a {
  padding-top: 40px;
 }
 
+@media (max-width:800px){
+    .contact {margin-left: 30px;}
+}
+
 .number {
  padding-top: 20px; padding-bottom: 20px;
 }
@@ -149,7 +211,7 @@ nav a {
 .footerPage1{
  text-align: center;
  padding: 40px;
- font-size: 13px;
+ font-size: 15px;
 }
 
 
