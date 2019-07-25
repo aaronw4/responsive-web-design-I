@@ -77,8 +77,10 @@ body {
  }
 
  @media (max-width: 800px) {
-    .TabMobLogo {display: block;}
+    .TabMobLogo {
+        display: block;
     }
+}
 
 nav{
  display: flex;
@@ -88,8 +90,17 @@ nav{
 }
 
 @media (max-width:800px) {
-    nav {justify-content: space-around;}
+    nav {
+        justify-content: space-around;
+    }
 }
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        border-bottom: 1px solid black;
+    }
+} 
 
 nav a {
  text-decoration: none;
@@ -98,13 +109,25 @@ nav a {
  color: darkgray;
 }
 
+@media (max-width: 500px){
+    nav a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 100%;
+        padding-right: 100%;
+        border-top: 1px solid black;
+    }
+}
+
 .logo {
  padding-left: 0px;
  padding-right: 10px;
 }
 
 @media (max-width: 800px){
-    .logo {display: none;}
+    .logo {
+        display: none;
+    }
 }
 
 .headerPage1 {
@@ -115,7 +138,9 @@ nav a {
 }
 
 @media (max-width:800px){
-    .headerPage1 {justify-content: center;}
+    .headerPage1 {
+        justify-content: center;
+    }
 }
 
 .title{
@@ -125,7 +150,9 @@ nav a {
 }
 
 @media (max-width: 800px){
-    .title {padding-left: 0px;}
+    .title {
+        padding-left: 0px;
+    }
 }
 
 .title h1{
@@ -147,7 +174,9 @@ nav a {
 }
 
 @media (max-width: 800px){
-    .image1 {display: none;}
+    .image1 {
+        display: none;
+    }
 }
 
 .above {
@@ -158,22 +187,40 @@ nav a {
 }
 
 @media (max-width:800px){
-    .above {margin-left: 20px;
-            margin-right: 20px;}
+    .above {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 @media (max-width:800px){
-    .words {padding-right: 20px;}
+    .words {
+        padding-right: 20px;
+    }
 }
+
+@media (max-width: 500px) {
+    .above {
+        flex-direction: column;
+    }
+} 
+
+@media (max-width: 500px) {
+    .words {
+        padding-bottom: 30px;
+    }
+} 
 
 .middle-img{
  margin:30px 5px 30px 5px;
 }
 
 @media (max-width:800px){
-    .middle-img{width: 100%;
-                height: auto;
-                margin: 30px 15px}
+    .middle-img{
+        width: 95%;
+        height: auto;
+        margin: 30px 15px
+    }
 }
 
 .below {
@@ -184,9 +231,17 @@ nav a {
 }
 
 @media (max-width:800px){
-    .below {margin-left: 20px;
-        margin-right: 20px;}
+    .below {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
+
+@media (max-width: 500px) {
+    .below {
+        flex-direction: column;
+    }
+} 
 
 .bottom1{
  padding-right: 20px;
@@ -195,6 +250,14 @@ nav a {
 .bottom2{
  padding-right: 20px;
 }
+
+@media (max-width: 500px) {
+    .bottom1 {
+        padding-bottom: 30px;
+    }
+    .bottom2 {
+        padding-bottom: 30px;
+} 
 
 .contact h4 {
  padding-top: 40px;
